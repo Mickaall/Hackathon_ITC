@@ -99,6 +99,9 @@ def blog2():
 @route("/blog-post.html")
 def blog_post():
     return static_file("blog-post.html", root='')
+@route("/game.html")
+def game():
+    return static_file("game.html", root='')
 
 
 # ----------------------------------------------------------------
