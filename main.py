@@ -1,10 +1,34 @@
-from bottle import route, run, template, static_file, get, post, delete, request, error
+from bottle import route, run, template, static_file, get, post, delete, request, error, TEMPLATE_PATH
 
 from sys import argv
 import json
 import pymysql
 
+TEMPLATE_PATH.insert(0, '')
+# CONNECT TO THE DATABASE
+connection = pymysql.connect(host='db4free.net',
+                             user='hackathonmike',
+                             password='HACKathon123',
+                             db='itchackathon',
+                             charset='utf8',
+                             cursorclass=pymysql.cursors.DictCursor)
 
+
+# LIST CATEGORIES
+@get("/categories")
+def list_categories():
+    try:
+        with connection.cursor() as cursor:
+            sql = "SELECT * FROM category"
+            cursor.execute(sql)
+            result = cursor.fetchall()
+            return json.dumps({"STATUS": "SUCCESS",
+                               "CATEGORIES": result,
+                               "CODE": 200})
+    except:
+        return json.dumps({"STATUS": "ERROR",
+                           "MSG": "Internal error",
+                           "CODE": 500})
 
 # STATIC ROUTES
 
