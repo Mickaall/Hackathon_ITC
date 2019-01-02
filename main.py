@@ -9,20 +9,28 @@ import pymysql
 
 
 @get("/")
+@route("/about.html")
 def index():
     return template("about.html")
 
-@get("/services")
+
+@route("/services.html")
 def services():
-    return template("services.html")
+    return static_file('services.html', root='')
 
-@get("/blog-home-1")
+
+@route("/blog-home-1.html")
 def blog1():
-    return template("blog-home-1.html")
+    return static_file("blog-home-1.html", root='')
 
-@get("/blog-home-2")
+
+@route("/blog-home-2.html")
 def blog2():
-    return template("blog-home-2.html")
+    return static_file("blog-home-2.html", root='')
+
+@route("/blog-post.html")
+def blog_post():
+    return static_file("blog-post.html", root='')
 
 
 # ----------------------------------------------------------------
