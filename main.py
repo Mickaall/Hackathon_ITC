@@ -1,9 +1,10 @@
-from bottle import route, run, template, static_file, get, post, delete, request, error
+from bottle import route, run, template, static_file, get, post, delete, request, error, TEMPLATE_PATH
+
 from sys import argv
 import json
 import pymysql
 
-
+TEMPLATE_PATH.insert(0, '')
 # CONNECT TO THE DATABASE
 connection = pymysql.connect(host='db4free.net',
                              user='hackathonmike',
@@ -71,9 +72,15 @@ def list_locations():
 
 @get("/")
 @route("/about.html")
+@get("/map.html")
 def index():
     return template("about.html")
 
+
+
+@route("/map.html")
+def map():
+    return static_file('map.html', root='')
 
 @route("/services.html")
 def services():
