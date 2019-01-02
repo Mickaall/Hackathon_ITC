@@ -55,7 +55,3 @@ About.renderLocation = function(locName, locId){
 };
 
 About.start();
-
-
-var loc =document.getElementById("container")
-loc.window.location="map.html"
