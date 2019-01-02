@@ -53,6 +53,20 @@ filter: alpha(opacity=0);
 .dogIcon {
   height: 40px;
 }
-.card-body.map{
-  width: 200px;
+.dog1{
+width: 300px;
+height: 200px;
+}
+.UploadDog{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left:20px;
+  width:150px;
+  height: 150px;
+  border-radius:50%;
+  border: 3px solid #CD853F;
+}
+.logo{
+  width: 20px;
+  height: 20px;
 }
