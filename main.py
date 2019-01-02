@@ -39,7 +39,7 @@ def list_locations():
             cursor.execute(sql)
             result = cursor.fetchall()
             return json.dumps({"STATUS": "SUCCESS",
-                               "CATEGORIES": result,
+                               "LOCATIONS": result,
                                "CODE": 200})
     except:
         return json.dumps({"STATUS": "ERROR",
