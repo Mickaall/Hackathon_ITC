@@ -53,9 +53,15 @@ def list_locations():
 
 @get("/")
 @route("/about.html")
+@get("/map.html")
 def index():
     return template("about.html")
 
+
+
+@route("/map.html")
+def map():
+    return static_file('map.html', root='')
 
 @route("/services.html")
 def services():
