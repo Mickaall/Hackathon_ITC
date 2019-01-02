@@ -1,0 +1,58 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+/* /* ajouter limage */
+.img-fluid.rounded.mb-4{
+  height: 30vh;
+}
+
+.container{
+  margin-top:20px;
+}
+.image-preview-input {
+  position: relative;
+  overflow: hidden;
+  margin: 0px;    
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+position: absolute;
+top: 0;
+right: 0;
+margin: 0;
+padding: 0;
+font-size: 20px;
+cursor: pointer;
+opacity: 0;
+filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+  margin-left:2px;
+}
+/* ajouter limage */
+
+
+.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+      background-image: linear-gradient(#CD853F,#8B4513);
+}
+.dogIcon {
+  height: 40px;
+}
+.card-body.map{
+  width: 200px;
+}
