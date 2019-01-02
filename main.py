@@ -12,6 +12,18 @@ import pymysql
 def index():
     return template("about.html")
 
+@get("/services")
+def services():
+    return template("services.html")
+
+@get("/blog-home-1")
+def blog1():
+    return template("blog-home-1.html")
+
+@get("/blog-home-2")
+def blog2():
+    return template("blog-home-2.html")
+
 
 # ----------------------------------------------------------------
 # JAVASCRIPT -----------------------------------------------------
