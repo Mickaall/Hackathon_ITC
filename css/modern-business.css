@@ -14,6 +14,7 @@ body {
   }
 }
 
+/* /* ajouter limage */
 .img-fluid.rounded.mb-4{
   height: 30vh;
 }
@@ -42,4 +43,16 @@ filter: alpha(opacity=0);
 }
 .image-preview-input-title {
   margin-left:2px;
+}
+/* ajouter limage */
+
+
+.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark.fixed-top {
+      background-image: linear-gradient(#CD853F,#8B4513);
+}
+.dogIcon {
+  height: 40px;
+}
+.card-body.map{
+  width: 200px;
 }
