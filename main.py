@@ -13,6 +13,26 @@ connection = pymysql.connect(host='db4free.net',
                              cursorclass=pymysql.cursors.DictCursor)
 
 
+# ADD AN ALERT
+@post("/alert")
+def add_alert():
+
+    category = request.POST.get('category')
+    description = request.POST.get('desc')
+    location = request.POST.get('location')
+
+    try:
+        with connection.cursor() as cursor:
+            sql = 'INSERT INTO alerts VALUES(%s, %s, %s)'
+            data = (category, description, location)
+            cursor.execute(sql, data)
+            connection.commit()
+    except:
+        return json.dumps({"STATUS": "ERROR",
+                           "MSG": "Missing Parameters",
+                           "CODE": 400})
+
+
 # LIST CATEGORIES
 @get("/categories")
 def list_categories():
@@ -48,7 +68,6 @@ def list_locations():
 
 
 # STATIC ROUTES
-
 
 @get("/")
 @route("/about.html")

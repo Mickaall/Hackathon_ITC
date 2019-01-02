@@ -4,11 +4,13 @@ About.start = function(){
 	$(document).ready(function() {
 		About.loadCategories();
 		About.loadLocations();
+		About.bindForms();
 	});
 };
 
 // -----------------------------------------------------------
 // CATEGORIES ------------------------------------------------
+// -----------------------------------------------------------
 
 About.loadCategories = function(){
 	$.get("/categories",function(result){
@@ -33,6 +35,7 @@ About.renderCategory = function(catName, catId){
 
 // -----------------------------------------------------------
 // LOCATIONS -------------------------------------------------
+// -----------------------------------------------------------
 
 About.loadLocations = function(){
 	$.get("/locations",function(result){
@@ -45,6 +48,28 @@ About.loadLocations = function(){
 			}
 		}
 	},"json");
+};
+
+
+// -----------------------------------------------------------
+// ADD ALERT -------------------------------------------------
+// -----------------------------------------------------------
+
+About.bindForms = function(){
+
+	var addAlertForm = $("form#add-product");
+	addAlertForm.submit(function(e){
+		e.preventDefault();
+		var submittedForm = $(this);
+		$.post("/alert",submittedForm.serialize(),function(result){
+			if (result["STATUS"] == "ERROR"){
+				alert(result["MSG"]);
+			}else{
+				alert("failure");
+			}
+		},"json");
+		return false;
+	});
 };
 
 About.renderLocation = function(locName, locId){
