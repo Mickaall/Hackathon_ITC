@@ -3,9 +3,14 @@ from bottle import route, run, template, static_file, get, post, delete, request
 from sys import argv
 import json
 import pymysql
+import os
 
 TEMPLATE_PATH.insert(0, '')
-# CONNECT TO THE DATABASE
+
+# ----------------------------------------------------------------
+# CONNECT TO THE DATABASE ----------------------------------------
+# ----------------------------------------------------------------
+
 connection = pymysql.connect(host='db4free.net',
                              user='hackathonmike',
                              password='HACKathon123',
@@ -14,7 +19,30 @@ connection = pymysql.connect(host='db4free.net',
                              cursorclass=pymysql.cursors.DictCursor)
 
 
-# ADD AN ALERT
+# ----------------------------------------------------------------
+# FILE UPLOAD ----------------------------------------------------
+# ----------------------------------------------------------------
+
+@post('/upload')
+def do_upload():
+    upload = request.files.get('upload')
+    name, ext = os.path.splitext(upload.filename)
+    if ext not in ('.png', '.jpg', '.jpeg'):
+        return "File extension not allowed."
+
+    save_path = "images"
+    if not os.path.exists(save_path):
+        os.makedirs(save_path)
+
+    file_path = "{path}/{file}".format(path=save_path, file=upload.filename)
+    upload.save(file_path)
+    return "File successfully saved to '{0}'.".format(save_path)
+
+
+# ----------------------------------------------------------------
+# ADD AN ALERT ---------------------------------------------------
+# ----------------------------------------------------------------
+
 @post("/alert")
 def add_alert():
 
@@ -33,8 +61,10 @@ def add_alert():
                            "MSG": "Missing Parameters",
                            "CODE": 400})
 
+# ----------------------------------------------------------------
+# LIST CATEGORIES & LOCATIONS ------------------------------------
+# ----------------------------------------------------------------
 
-# LIST CATEGORIES
 @get("/categories")
 def list_categories():
     try:
@@ -51,7 +81,6 @@ def list_categories():
                            "CODE": 500})
 
 
-# LIST LOCATIONS
 @get("/locations")
 def list_locations():
     try:
@@ -68,7 +97,9 @@ def list_locations():
                            "CODE": 500})
 
 
-# STATIC ROUTES
+# ----------------------------------------------------------------
+# STATIC ROUTES --------------------------------------------------
+# ----------------------------------------------------------------
 
 @get("/")
 @route("/about.html")
