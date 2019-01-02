@@ -29,6 +29,24 @@ def list_categories():
                            "MSG": "Internal error",
                            "CODE": 500})
 
+
+# LIST LOCATIONS
+@get("/locations")
+def list_locations():
+    try:
+        with connection.cursor() as cursor:
+            sql = "SELECT * FROM location"
+            cursor.execute(sql)
+            result = cursor.fetchall()
+            return json.dumps({"STATUS": "SUCCESS",
+                               "CATEGORIES": result,
+                               "CODE": 200})
+    except:
+        return json.dumps({"STATUS": "ERROR",
+                           "MSG": "Internal error",
+                           "CODE": 500})
+
+
 # STATIC ROUTES
 
 
