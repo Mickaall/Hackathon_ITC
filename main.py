@@ -216,6 +216,8 @@ def index():
     return template("about.html")
 
 
+
+
 @route("/fake_map.html")
 def map():
     return static_file('fake_map.html', root='')

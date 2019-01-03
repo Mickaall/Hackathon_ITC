@@ -40,17 +40,3 @@ GanMeir.renderAlert = function (alert) {
 };
 
 GanMeir.start();
-
-
-{/* <div class="card mb-4">
-    <div class="card-body">
-        <div class="row">
-            <div class="col-lg-6">
-            </div>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
-        </div>
-    </div>
-    <div class="card-footer text-muted">
-        Posted on January 1,2019
-        </div>
-</div> */}
