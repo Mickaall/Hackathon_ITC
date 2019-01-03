@@ -79,4 +79,4 @@ About.renderLocation = function(locName, locId){
 	locationSelect.append(locOp);
 };
 
-About.start();
+ut.start();

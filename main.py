@@ -61,6 +61,20 @@ def add_alert():
                            "MSG": "Missing Parameters",
                            "CODE": 400})
 
+@get("/blog-home-1.html")
+def load_alerts():
+    try:
+        with connection.cursor() as cursor:
+            sql = ('SELECT * FROM alerts')
+            cursor.execute(sql)
+            result = cursor.fetchall()
+            if result:
+                return json.dumps({'STATUS': 'SUCCESS', 'PRODUCTS': result, 'CODE': 201})
+            else:
+                return json.dumps({'STATUS': 'ERROR', 'MSG': "product not found", 'CODE': 404})
+
+    except:
+        return json.dumps({'STATUS': 'ERROR', 'MSG': "Internal error", 'CODE': 500})
 # ----------------------------------------------------------------
 # LIST CATEGORIES & LOCATIONS ------------------------------------
 # ----------------------------------------------------------------
