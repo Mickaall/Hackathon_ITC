@@ -1,143 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>K-LEV</title>
+  <title>K-LEV</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
-  </head>
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+</head>
 
-  <body>
+<body>
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-       <img src="https://image.flaticon.com/icons/svg/616/616554.svg" alt ="" class="dogIcon">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="about.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Dogs</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Places in Tel Aviv
-              </a>
-              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                <a class="dropdown-item" href="blog-home-1.html">Gan Meir</a>
-                <a class="dropdown-item" href="blog-home-2.html">Gan Hakovshim</a>
-                <a class="dropdown-item" href="blog-post.html">Beach</a>
-              </div>
-            </li>
-           
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Page Content -->
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">About
-        <small>K-LEV
-          <img alt="" src="https://image.flaticon.com/icons/svg/1344/1344623.svg" class="logo">
-        </small>
-      </h1>
-      <!-- Intro Content -->
-
-<div class="aboutus">
-      <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <div class="card-body">
-              <p class="card-text">
-                  <form action="/upload" method="post" enctype="multipart/form-data">
-                    Upload: <input type="file" name="upload"  />
-                    <input type="submit" value="Upload"   data-toggle="modal" data-target="#myModal" />
-                  </form>
-                 <form id="add-product" >
-                  <table>
-                  <tr><td><label>Choose Category: </label></td><td><select id="choose-cat" name="category"></select></td></tr>
-                  <tr><td><label>Add an alert: </label>   </td><td><textarea type="text" name="desc" ></textarea></td></tr>
-                      <tr><td><label>Location:</label> </td><td><select id="choose-loc" name="location"></select></td></tr>
-                      <tr><td colspan="2"><input type="hidden" name="id"class="btn"  /> <input type="submit" class="clickable"  value="Add"  class="btn"/>
-                  </table>
-              </form></p>
+      <img src="https://image.flaticon.com/icons/svg/616/616554.svg" alt="" class="dogIcon">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Dogs</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Places in Tel Aviv
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+              <a class="dropdown-item" href="blog-home-1.html">Gan Meir</a>
+              <a class="dropdown-item" href="blog-home-2.html">Gan Hakovshim</a>
+              <a class="dropdown-item" href="blog-post.html">Beach</a>
             </div>
-          </div>
-        </div>
-        
+          </li>
+
+        </ul>
+      </div>
     </div>
-      <!-- /.row -->
+  </nav>
 
-      <!-- Team Members -->
-      <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-center">
-            <p class="card-text"></p>
-            <div class="card-body">
-              <h4 class="card-title">THE KING/QUEEN OF THE DAY</h4>
-                <img alt="" src="https://images-na.ssl-images-amazon.com/images/I/91iLBUN1gIL._UX679_.jpg" class="king">
-                <form method="get" action="game.html">
-                  <button type="submit" class="play"> LET'S PLAY</button>
-                </form>
-            </div>
-            
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-center">
-              <div id="container">
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="fake_map.html"></iframe>
-              </div>
-            <div class="card-body">
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100 text-center">
-            <div class="card-body" id="alerts-holder">
-              <h4 class="card-title">Today's Alerts:</h4>
-            </div>
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">About
+      <small>K-LEV
+        <img alt="" src="https://image.flaticon.com/icons/svg/1344/1344623.svg" class="logo">
+      </small>
+    </h1>
+    <!-- Intro Content -->
+
+    <div class="aboutus">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <p class="card-text">
+              <form action="/upload" method="post" enctype="multipart/form-data">
+                Upload: <input type="file" name="upload" />
+                <input type="submit" value="Upload" data-toggle="modal" data-target="#myModal" />
+              </form>
+              <form id="add-product">
+                <table>
+                  <tr>
+                    <td><label>Choose Category: </label></td>
+                    <td><select id="choose-cat" name="category"></select></td>
+                  </tr>
+                  <tr>
+                    <td><label>Add an alert: </label> </td>
+                    <td><textarea type="text" name="desc"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td><label>Location:</label> </td>
+                    <td><select id="choose-loc" name="location"></select></td>
+                  </tr>
+                  <label>Ranking: </label>
+                  <input type="range" name="ageInputName" id="ageInputId" value="3" min="1" max="5" step="1" oninput="ageOutputId.value = ageInputId.value">
+                  <output name="ageOutputName" id="ageOutputId">3</output>
+                  <tr>
+                    <td colspan="2"><input type="hidden" name="id" class="btn" /> <input type="submit" class="clickable"
+                        value="Add" class="btn" />
+                </table>
+              </form>
+            </p>
           </div>
         </div>
       </div>
-      <!-- /.row -->
+
+    </div>
+    <!-- /.row -->
+
+    <!-- Team Members -->
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <p class="card-text"></p>
+          <div class="card-body">
+            <h4 class="card-title">THE KING/QUEEN OF THE DAY</h4>
+            <img alt="" src="https://images-na.ssl-images-amazon.com/images/I/91iLBUN1gIL._UX679_.jpg" class="king">
+            <form method="get" action="game.html">
+              <button type="submit" class="play"> LET'S PLAY</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <div id="container">
+            <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="fake_map.html"></iframe>
+          </div>
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card h-100 text-center">
+          <div class="card-body" id="alerts-holder">
+            <h4 class="card-title">Today's Alerts:</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
 
 
-      <!-- /.row -->
+    <!-- /.row -->
 
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">K-LEV&copy; Our website</p>
     </div>
     <!-- /.container -->
+  </footer>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">K-LEV&copy; Our website</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/about.js"></script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/about.js"></script>
-
-  </body>
+</body>
 
 </html>

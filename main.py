@@ -20,6 +20,32 @@ connection = pymysql.connect(host='db4free.net',
 
 
 # ----------------------------------------------------------------
+# CONNECT TO THE DATABASE ----------------------------------------
+# ----------------------------------------------------------------
+
+@get("/recc")
+def load_recc():
+    try:
+        with connection.cursor() as cursor:
+            sql = 'SELECT * FROM recommendation LIMIT 1'
+            cursor.execute(sql)
+            result = cursor.fetchall()
+            if result:
+                return json.dumps({'STATUS': 'SUCCESS',
+                                   'RECC': result,
+                                   'CODE': 200})
+            else:
+                return json.dumps({'STATUS': 'ERROR',
+                                   'MSG': "no alerts found",
+                                   'CODE': 404})
+
+    except:
+        return json.dumps({'STATUS': 'ERROR',
+                           'MSG': "Internal error",
+                           'CODE': 500})
+
+
+# ----------------------------------------------------------------
 # FILE UPLOAD ----------------------------------------------------
 # ----------------------------------------------------------------
 
@@ -28,7 +54,7 @@ connection = pymysql.connect(host='db4free.net',
 def do_upload():
     x = "It's a dog"
     y = "The breed is a Chiwawa"
-    z= "Go to Gan Meir"
+    z = "Go to Gan Meir"
     upload = request.files.get('upload')
     name, ext = os.path.splitext(upload.filename)
     if ext not in ('.png', '.jpg', '.jpeg'):
@@ -224,6 +250,11 @@ def map():
 @route("/services.html")
 def services():
     return static_file('services.html', root='')
+
+
+@route("/portfolio-item.html")
+def recc():
+    return static_file('portfolio-item.html', root='')
 
 
 @route("/blog-home-1.html")
