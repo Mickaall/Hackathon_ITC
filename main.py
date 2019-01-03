@@ -46,26 +46,26 @@ def do_upload():
 @post("/alert")
 def add_alert():
 
-    category = request.POST.get('category')
-    if category == 1:
+    cat = request.POST.get('category')
+    if cat == '1':
         category = "Cleanliness"
-    elif category == 2:
+    elif cat == '2':
         category = "Fight"
-    elif category == 3:
+    elif cat == '3':
         category = "Park Condition"
-    elif category == 4:
+    elif cat == '4':
         category = "Weather"
-    elif category == 5:
+    elif cat == '5':
         category = "Other"
 
     description = request.POST.get('desc')
 
-    location = request.POST.get('location')
-    if location == 1:
+    loc = request.POST.get('location')
+    if loc == '1':
         location = "Gan Meir"
-    elif location == 2:
+    elif loc == '2':
         location = "Gan Hakovshim"
-    elif location == 3:
+    elif loc == '3':
         location = "Beach"
 
     try:
@@ -79,20 +79,21 @@ def add_alert():
                            "MSG": "Missing Parameters",
                            "CODE": 400})
 
+
 @get("/alerts")
 def load_alerts():
     try:
         with connection.cursor() as cursor:
-            sql = ('SELECT * FROM alerts')
+            sql = 'SELECT * FROM alerts LIMIT 5'
             cursor.execute(sql)
             result = cursor.fetchall()
             if result:
                 return json.dumps({'STATUS': 'SUCCESS',
                                    'ALERTS': result,
-                                   'CODE': 201})
+                                   'CODE': 200})
             else:
                 return json.dumps({'STATUS': 'ERROR',
-                                   'MSG': "product not found",
+                                   'MSG': "no alerts found",
                                    'CODE': 404})
 
     except:

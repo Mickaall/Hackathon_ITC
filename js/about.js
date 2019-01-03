@@ -4,6 +4,7 @@ About.start = function(){
 	$(document).ready(function() {
 		About.loadCategories();
 		About.loadLocations();
+		About.loadAlerts();
 		About.bindForms();
 	});
 };
@@ -76,6 +77,31 @@ About.bindForms = function(){
 		},"json");
 		return false;
 	});
+};
+
+About.loadAlerts = function(){
+	// $("#alerts-holder").empty();
+	$.get("/alerts",function(result){
+		if (result["STATUS"] == "ERROR"){
+			alert(result["MSG"]);
+		}else{
+			var alerts = result["ALERTS"];
+			for (i in alerts){
+				About.renderAlert(alerts[i]);
+			}
+		}
+	},"json");
+};
+
+About.renderAlert = function(alert){
+	console.log("ENTER RENDER ALERT")
+	var alertsHolder = $("#alerts-holder");
+	alertTitle = $("<div />").addClass("a-title").text(alert.category);
+	alertText = $("<div />").addClass("a-text").text(alert.description);
+	alertLocation = $("<div />").addClass("a-loc").text(alert.location);
+	alertTitle.append(alertText);
+	alertTitle.append(alertLocation);
+	alertsHolder.append(alertTitle);
 };
 
 About.start();
