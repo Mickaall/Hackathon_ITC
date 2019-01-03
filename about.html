@@ -55,34 +55,34 @@
 
       <!-- Page Heading/Breadcrumbs -->
       <h1 class="mt-4 mb-3">About
-        <small>K-LEV</small>
+        <small>K-LEV
+          <img alt="" src="https://image.flaticon.com/icons/svg/1344/1344623.svg" class="logo">
+        </small>
       </h1>
       <!-- Intro Content -->
-      <div class="row">
-        <div class="col-lg-6">
-        
-          <form action="/upload" method="post" enctype="multipart/form-data">
-            Upload: <input type="file" name="upload" />
-            <input type="submit" value="Upload" />
-          </form>
-          
-        <form id="add-product" >
-            <table>
-            <tr><td><label>Choose Category: </label></td><td><select id="choose-cat" name="category"></select></td></tr>
-            <tr><td><label>Add an alert: </label>   </td><td><textarea type="text" name="desc" ></textarea></td></tr>
-                <tr><td><label>Location:</label> </td><td><select id="choose-loc" name="location"></select></td></tr>
-                <tr><td colspan="2"><input type="hidden" name="id" /> <input type="submit" class="clickable"  value="Add" />
-            </table>
-        </form>
-        </div>
 
-        <div class="col-lg-6">
-          <h2>About K-LEV <img alt="" src="https://image.flaticon.com/icons/svg/1344/1344623.svg" class="logo"></h2>
-          <p>You want to walk with your dog but you're afraid he's bored? you do not want him to be bothered by  dangerous dogs?</p>
-          <p>Thanks to K-LEV, you can now have all the informations on which dog frequents which park, the good alerts  to know and even make your dog the king of the week</p>
-          <p>the first site that will delight every dog and his owner</p>
+<div class="aboutus">
+      <div class="col-lg-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <p class="card-text">
+                  <form action="/upload" method="post" enctype="multipart/form-data">
+                    Upload: <input type="file" name="upload"  />
+                    <input type="submit" value="Upload"   data-toggle="modal" data-target="#myModal" />
+                  </form>
+                 <form id="add-product" >
+                  <table>
+                  <tr><td><label>Choose Category: </label></td><td><select id="choose-cat" name="category"></select></td></tr>
+                  <tr><td><label>Add an alert: </label>   </td><td><textarea type="text" name="desc" ></textarea></td></tr>
+                      <tr><td><label>Location:</label> </td><td><select id="choose-loc" name="location"></select></td></tr>
+                      <tr><td colspan="2"><input type="hidden" name="id"class="btn"  /> <input type="submit" class="clickable"  value="Add"  class="btn"/>
+                  </table>
+              </form></p>
+            </div>
+          </div>
         </div>
-      </div>
+        
+    </div>
       <!-- /.row -->
 
       <!-- Team Members -->
@@ -91,17 +91,19 @@
           <div class="card h-100 text-center">
             <p class="card-text"></p>
             <div class="card-body">
-              <h4 class="card-title">THE KING/QUEEN OF THE WEEK</h4>
-              <form method="get" action="game.html">
-                <button type="submit">PLAY</button>
-            </form>
+              <h4 class="card-title">THE KING/QUEEN OF THE DAY</h4>
+                <img alt="" src="https://images-na.ssl-images-amazon.com/images/I/91iLBUN1gIL._UX679_.jpg" class="king">
+                <form method="get" action="game.html">
+                  <button type="submit" class="play"> LET'S PLAY</button>
+                </form>
             </div>
+            
           </div>
         </div>
         <div class="col-lg-4 mb-4">
           <div class="card h-100 text-center">
               <div id="container">
-                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="map.html"></iframe>
+                <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="fake_map.html"></iframe>
               </div>
             <div class="card-body">
             </div>
