@@ -4,6 +4,7 @@ About.start = function(){
 	$(document).ready(function() {
 		About.loadCategories();
 		About.loadLocations();
+		About.loadAlerts();
 		About.bindForms();
 	});
 };
@@ -50,6 +51,12 @@ About.loadLocations = function(){
 	},"json");
 };
 
+About.renderLocation = function(locName, locId){
+	//Update the locations dropdown in the product form
+	var locationSelect = $("select#choose-loc");
+	var locOp = $("<option />").attr("value",locId).text(locName);
+	locationSelect.append(locOp);
+};
 
 // -----------------------------------------------------------
 // ADD ALERT -------------------------------------------------
@@ -72,11 +79,28 @@ About.bindForms = function(){
 	});
 };
 
-About.renderLocation = function(locName, locId){
-	//Update the locations dropdown in the product form
-	var locationSelect = $("select#choose-loc");
-	var locOp = $("<option />").attr("value",locId).text(locName);
-	locationSelect.append(locOp);
+About.loadAlerts = function(){
+	// $("#alerts-holder").empty();
+	$.get("/alerts",function(result){
+		if (result["STATUS"] == "ERROR"){
+			alert(result["MSG"]);
+		}else{
+			var alerts = result["ALERTS"];
+			for (i in alerts){
+				About.renderAlert(alerts[i]);
+			}
+		}
+	},"json");
 };
 
-ut.start();
+About.renderAlert = function(alert){
+	var alertsHolder = $("#alerts-holder");
+	alertTitle = $("<div />").addClass("a-title").text(alert.category);
+	alertText = $("<div />").addClass("a-text").text(alert.description);
+	alertLocation = $("<div />").addClass("a-loc").text(alert.location);
+	alertTitle.append(alertText);
+	alertTitle.append(alertLocation);
+	alertsHolder.append(alertTitle);
+};
+
+About.start();

@@ -48,9 +48,27 @@ def do_upload():
 @post("/alert")
 def add_alert():
 
-    category = request.POST.get('category')
+    cat = request.POST.get('category')
+    if cat == '1':
+        category = "Cleanliness"
+    elif cat == '2':
+        category = "Fight"
+    elif cat == '3':
+        category = "Park Condition"
+    elif cat == '4':
+        category = "Weather"
+    elif cat == '5':
+        category = "Other"
+
     description = request.POST.get('desc')
-    location = request.POST.get('location')
+
+    loc = request.POST.get('location')
+    if loc == '1':
+        location = "Gan Meir"
+    elif loc == '2':
+        location = "Gan Hakovshim"
+    elif loc == '3':
+        location = "Beach"
 
     try:
         with connection.cursor() as cursor:
@@ -63,20 +81,94 @@ def add_alert():
                            "MSG": "Missing Parameters",
                            "CODE": 400})
 
-@get("/blog-home-1.html")
+
+@get("/alerts")
 def load_alerts():
     try:
         with connection.cursor() as cursor:
-            sql = ('SELECT * FROM alerts')
+            sql = 'SELECT * FROM alerts LIMIT 5'
             cursor.execute(sql)
             result = cursor.fetchall()
             if result:
-                return json.dumps({'STATUS': 'SUCCESS', 'PRODUCTS': result, 'CODE': 201})
+                return json.dumps({'STATUS': 'SUCCESS',
+                                   'ALERTS': result,
+                                   'CODE': 200})
             else:
-                return json.dumps({'STATUS': 'ERROR', 'MSG': "product not found", 'CODE': 404})
+                return json.dumps({'STATUS': 'ERROR',
+                                   'MSG': "no alerts found",
+                                   'CODE': 404})
 
     except:
-        return json.dumps({'STATUS': 'ERROR', 'MSG': "Internal error", 'CODE': 500})
+        return json.dumps({'STATUS': 'ERROR',
+                           'MSG': "Internal error",
+                           'CODE': 500})
+
+
+@get("/alerts-gm")
+def load_alerts_gm():
+    try:
+        with connection.cursor() as cursor:
+            sql = 'SELECT * FROM alerts WHERE location = "Gan Meir"'
+            cursor.execute(sql)
+            result = cursor.fetchall()
+            if result:
+                return json.dumps({'STATUS': 'SUCCESS',
+                                   'ALERTS': result,
+                                   'CODE': 200})
+            else:
+                return json.dumps({'STATUS': 'ERROR',
+                                   'MSG': "no alerts found",
+                                   'CODE': 404})
+
+    except:
+        return json.dumps({'STATUS': 'ERROR',
+                           'MSG': "Internal error",
+                           'CODE': 500})
+
+
+@get("/alerts-gh")
+def load_alerts_gh():
+    try:
+        with connection.cursor() as cursor:
+            sql = 'SELECT * FROM alerts WHERE location = "Gan Hakovshim"'
+            cursor.execute(sql)
+            result = cursor.fetchall()
+            if result:
+                return json.dumps({'STATUS': 'SUCCESS',
+                                   'ALERTS': result,
+                                   'CODE': 200})
+            else:
+                return json.dumps({'STATUS': 'ERROR',
+                                   'MSG': "no alerts found",
+                                   'CODE': 404})
+
+    except:
+        return json.dumps({'STATUS': 'ERROR',
+                           'MSG': "Internal error",
+                           'CODE': 500})
+
+
+@get("/alerts-b")
+def load_alerts_b():
+    try:
+        with connection.cursor() as cursor:
+            sql = 'SELECT * FROM alerts WHERE location = "Beach"'
+            cursor.execute(sql)
+            result = cursor.fetchall()
+            if result:
+                return json.dumps({'STATUS': 'SUCCESS',
+                                   'ALERTS': result,
+                                   'CODE': 200})
+            else:
+                return json.dumps({'STATUS': 'ERROR',
+                                   'MSG': "no alerts found",
+                                   'CODE': 404})
+
+    except:
+        return json.dumps({'STATUS': 'ERROR',
+                           'MSG': "Internal error",
+                           'CODE': 500})
+
 # ----------------------------------------------------------------
 # LIST CATEGORIES & LOCATIONS ------------------------------------
 # ----------------------------------------------------------------
@@ -124,10 +216,10 @@ def index():
     return template("about.html")
 
 
-
 @route("/fake_map.html")
 def map():
     return static_file('fake_map.html', root='')
+
 
 @route("/services.html")
 def services():
@@ -143,9 +235,12 @@ def blog1():
 def blog2():
     return static_file("blog-home-2.html", root='')
 
+
 @route("/blog-post.html")
 def blog_post():
     return static_file("blog-post.html", root='')
+
+
 @route("/game.html")
 def game():
     return static_file("game.html", root='')
