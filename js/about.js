@@ -79,8 +79,4 @@ About.renderLocation = function(locName, locId){
 	locationSelect.append(locOp);
 };
 
-About.start();
-
-
-var loc =document.getElementById("container")
-loc.window.location="map.html"
+ut.start();
