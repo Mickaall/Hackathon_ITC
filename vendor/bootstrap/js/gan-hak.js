@@ -31,9 +31,6 @@ GanHak.renderAlert = function (alert) {
     var cardtext = $("<p />").addClass("card-text a-text").text(alert.description);
     var footer = $("<div />").addClass("card-footer text-muted a-title").text(alert.category);
 
-    console.log(alert.description);
-    console.log(alert.category);
-
     row.append(col);
     row.append(cardtext);
     cardbody.append(row);
