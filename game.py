@@ -81,7 +81,7 @@ def get_the_king():
 
     ## NEED TO INNER JOIN IMAGE TABLE AND RETURN THE PATH OF THE IMAGE
 
-    query = """select klev.img_name, game.score/game.shows as points,  avg(game.shows) as avg_views
+    query = """select klev.img_name, game.score/game.shows as points, avg(game.shows) as avg_views
 from game inner join klev on image.id = game.img_id
 where game.shows > (select avg(shows) from game)*3/4
 order by points desc 
