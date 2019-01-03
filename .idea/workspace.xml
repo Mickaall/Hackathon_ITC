@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb517ffb-9acd-4e85-a0ee-f8e929d5a6f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/game.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/Screen-Shot-2018-12-08-at-12.24.23-PM.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/gan-meir.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/bootstrap/js/beach.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/bootstrap/js/gan-hak.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/bootstrap/js/gan-meir.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-home-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-home-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-home-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-home-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="fb517ffb-9acd-4e85-a0ee-f8e929d5a6f8" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+            <state relative-caret-position="-3580">
+              <caret line="75" column="52" lean-forward="true" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
               <folding>
                 <element signature="e#0#94#0" expanded="true" />
               </folding>
@@ -193,17 +180,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>212</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/modern-business.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -245,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        <state relative-caret-position="-3580">
+          <caret line="75" column="52" lean-forward="true" selection-start-line="75" selection-start-column="52" selection-end-line="75" selection-end-column="52" />
           <folding>
             <element signature="e#0#94#0" expanded="true" />
           </folding>
