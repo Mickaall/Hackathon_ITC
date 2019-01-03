@@ -102,5 +102,12 @@ About.renderAlert = function(alert){
 	alertTitle.append(alertLocation);
 	alertsHolder.append(alertTitle);
 };
-
+About.choosePhoto = function(e){
+	var btn1 = document.getElementById("vote1");
+	var btn2= document.getElementById("vote2");
+	
+	if(e.target.id="vote1"){
+		
+	}
+}
 About.start();
