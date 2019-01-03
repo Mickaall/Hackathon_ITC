@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_70747b72c15749788fdb8bcc4ce53093 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_70747b72c15749788fdb8bcc4ce53093" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_70747b72c15749788fdb8bcc4ce53093 = L.map(
+        'map_70747b72c15749788fdb8bcc4ce53093', {
+        center: [32.063292, 34.772731],
+        zoom: 13.2,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_6e8c2d6fab0b456d8dce2e20d5346b74 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+    
+        var marker_9f37d5179a3546638593a1ce5e42b9ea = L.marker(
+            [32.072993, 34.773295],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_74c2090f15e643ddb347392b81f6abc3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_84cc07f13949412dbccca3d934352b36 = $(`<div id="html_84cc07f13949412dbccca3d934352b36" style="width: 100.0%; height: 100.0%;">Chihuahua</div>`)[0];
+                popup_74c2090f15e643ddb347392b81f6abc3.setContent(html_84cc07f13949412dbccca3d934352b36);
+            
+
+            marker_9f37d5179a3546638593a1ce5e42b9ea.bindPopup(popup_74c2090f15e643ddb347392b81f6abc3)
+            ;
+
+            
+        
+    
+        var marker_8c5d5e228c8647c19b3f0634e291c5ad = L.marker(
+            [32.099299, 34.811296],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_622a6908eb634d67adadd7341841ab66 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d07f7d61a6514f05991b7cb7828d2882 = $(`<div id="html_d07f7d61a6514f05991b7cb7828d2882" style="width: 100.0%; height: 100.0%;">Dalmatian</div>`)[0];
+                popup_622a6908eb634d67adadd7341841ab66.setContent(html_d07f7d61a6514f05991b7cb7828d2882);
+            
+
+            marker_8c5d5e228c8647c19b3f0634e291c5ad.bindPopup(popup_622a6908eb634d67adadd7341841ab66)
+            ;
+
+            
+        
+    
+        var marker_8175afd73d1c4be28b7d7f325a540610 = L.marker(
+            [32.077876, 34.784824],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_e925a66e3f9d416aa5973131d25b84bf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bb3b6e3c61774c09b4035050c3a49000 = $(`<div id="html_bb3b6e3c61774c09b4035050c3a49000" style="width: 100.0%; height: 100.0%;">Cavalier_king_charles_spaniel</div>`)[0];
+                popup_e925a66e3f9d416aa5973131d25b84bf.setContent(html_bb3b6e3c61774c09b4035050c3a49000);
+            
+
+            marker_8175afd73d1c4be28b7d7f325a540610.bindPopup(popup_e925a66e3f9d416aa5973131d25b84bf)
+            ;
+
+            
+        
+    
+        var marker_79a1364e6f494e3d977b2546534d71bb = L.marker(
+            [32.091119, 34.771643],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_17882f0de24f43baa30c3721d1b6e76f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ccef2144ca7843e8b4824db8f54f020d = $(`<div id="html_ccef2144ca7843e8b4824db8f54f020d" style="width: 100.0%; height: 100.0%;">Yorkshire_terrier</div>`)[0];
+                popup_17882f0de24f43baa30c3721d1b6e76f.setContent(html_ccef2144ca7843e8b4824db8f54f020d);
+            
+
+            marker_79a1364e6f494e3d977b2546534d71bb.bindPopup(popup_17882f0de24f43baa30c3721d1b6e76f)
+            ;
+
+            
+        
+    
+        var marker_e753c0b6ecf041f8aa32fb51d71b5668 = L.marker(
+            [32.091119, 34.771641],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_1f6536913b654650a089c937cb8383d8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c5272aab232d475db8b85b6dd45f4ae2 = $(`<div id="html_c5272aab232d475db8b85b6dd45f4ae2" style="width: 100.0%; height: 100.0%;">Cavalier_king_charles_spaniel</div>`)[0];
+                popup_1f6536913b654650a089c937cb8383d8.setContent(html_c5272aab232d475db8b85b6dd45f4ae2);
+            
+
+            marker_e753c0b6ecf041f8aa32fb51d71b5668.bindPopup(popup_1f6536913b654650a089c937cb8383d8)
+            ;
+
+            
+        
+    
+        var marker_e44e291478ff4ee19ce3a463784d4908 = L.marker(
+            [32.04948, 34.771643],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_1b3af47083b441f89955727ab00931cf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ee0bfe734ffa4a09a81686f61a2bacbc = $(`<div id="html_ee0bfe734ffa4a09a81686f61a2bacbc" style="width: 100.0%; height: 100.0%;">Yorkshire_terrier</div>`)[0];
+                popup_1b3af47083b441f89955727ab00931cf.setContent(html_ee0bfe734ffa4a09a81686f61a2bacbc);
+            
+
+            marker_e44e291478ff4ee19ce3a463784d4908.bindPopup(popup_1b3af47083b441f89955727ab00931cf)
+            ;
+
+            
+        
+    
+        var marker_f87674ff1f4d4c378d50f29aa997fda9 = L.marker(
+            [32.045915, 34.770935],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_5994130f3d264ff2b352cf7afd5b3a7c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3f53e966c21744c1be573c25f6c21313 = $(`<div id="html_3f53e966c21744c1be573c25f6c21313" style="width: 100.0%; height: 100.0%;">German_shepherd_dog</div>`)[0];
+                popup_5994130f3d264ff2b352cf7afd5b3a7c.setContent(html_3f53e966c21744c1be573c25f6c21313);
+            
+
+            marker_f87674ff1f4d4c378d50f29aa997fda9.bindPopup(popup_5994130f3d264ff2b352cf7afd5b3a7c)
+            ;
+
+            
+        
+    
+        var marker_e90c4f66159a4482891f428fc3dac8a3 = L.marker(
+            [32.04971, 34.760246],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_5cd80188d1834ffca98c87cb289e960b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7ab28eba8f284606ae60013c4fc78aa2 = $(`<div id="html_7ab28eba8f284606ae60013c4fc78aa2" style="width: 100.0%; height: 100.0%;">Yorkshire_terrier</div>`)[0];
+                popup_5cd80188d1834ffca98c87cb289e960b.setContent(html_7ab28eba8f284606ae60013c4fc78aa2);
+            
+
+            marker_e90c4f66159a4482891f428fc3dac8a3.bindPopup(popup_5cd80188d1834ffca98c87cb289e960b)
+            ;
+
+            
+        
+    
+        var marker_db5d87a7f0704e6a807e59b1edaa67a0 = L.marker(
+            [32.048166, 34.755941],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_634155b00de14a579d4362e96a8dd2df = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ed7f32633e55499e80ae55170fd5937c = $(`<div id="html_ed7f32633e55499e80ae55170fd5937c" style="width: 100.0%; height: 100.0%;">French_bulldog</div>`)[0];
+                popup_634155b00de14a579d4362e96a8dd2df.setContent(html_ed7f32633e55499e80ae55170fd5937c);
+            
+
+            marker_db5d87a7f0704e6a807e59b1edaa67a0.bindPopup(popup_634155b00de14a579d4362e96a8dd2df)
+            ;
+
+            
+        
+    
+        var marker_b56f6e79b0b240bbaab8d58f1e8aa1f9 = L.marker(
+            [32.046993, 34.752888],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_aea1c604be2347d4858287dd6c731fe8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dfff55b9ab64455687ab067015c64287 = $(`<div id="html_dfff55b9ab64455687ab067015c64287" style="width: 100.0%; height: 100.0%;">German_shepherd_dog</div>`)[0];
+                popup_aea1c604be2347d4858287dd6c731fe8.setContent(html_dfff55b9ab64455687ab067015c64287);
+            
+
+            marker_b56f6e79b0b240bbaab8d58f1e8aa1f9.bindPopup(popup_aea1c604be2347d4858287dd6c731fe8)
+            ;
+
+            
+        
+    
+        var marker_c578da6cf2464eef833ea6877294e269 = L.marker(
+            [32.072992, 34.773295],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_c6a0837d0e3f4a22a9c02c5c218bf529 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ac5d40e5fbf2475aa2ae7af83c724aab = $(`<div id="html_ac5d40e5fbf2475aa2ae7af83c724aab" style="width: 100.0%; height: 100.0%;">Dalmatian</div>`)[0];
+                popup_c6a0837d0e3f4a22a9c02c5c218bf529.setContent(html_ac5d40e5fbf2475aa2ae7af83c724aab);
+            
+
+            marker_c578da6cf2464eef833ea6877294e269.bindPopup(popup_c6a0837d0e3f4a22a9c02c5c218bf529)
+            ;
+
+            
+        
+    
+        var marker_67951752b4624ad19aa6ccdc9e125b58 = L.marker(
+            [32.099299, 34.811296],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_85daa5cfa21c4c15a6c9c8bd34d290c5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7caadaf8041248829eca95b2f9906a4e = $(`<div id="html_7caadaf8041248829eca95b2f9906a4e" style="width: 100.0%; height: 100.0%;">Dalmatian</div>`)[0];
+                popup_85daa5cfa21c4c15a6c9c8bd34d290c5.setContent(html_7caadaf8041248829eca95b2f9906a4e);
+            
+
+            marker_67951752b4624ad19aa6ccdc9e125b58.bindPopup(popup_85daa5cfa21c4c15a6c9c8bd34d290c5)
+            ;
+
+            
+        
+    
+        var marker_95ac199924ec41a5af72047f97c40767 = L.marker(
+            [32.077603, 34.784406],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_f2cd6e540fea4c92a7d07d41f7d6f519 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c8311fbf8d3541999604a051bf13cad1 = $(`<div id="html_c8311fbf8d3541999604a051bf13cad1" style="width: 100.0%; height: 100.0%;">Cavalier_king_charles_spaniel</div>`)[0];
+                popup_f2cd6e540fea4c92a7d07d41f7d6f519.setContent(html_c8311fbf8d3541999604a051bf13cad1);
+            
+
+            marker_95ac199924ec41a5af72047f97c40767.bindPopup(popup_f2cd6e540fea4c92a7d07d41f7d6f519)
+            ;
+
+            
+        
+    
+        var marker_d6d54ca5bcc64b23beba1853bbb0adef = L.marker(
+            [32.091119, 34.771643],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_a363eb219c73473a8c0357beab7feb04 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_71143584e08d45149aa1274702aed925 = $(`<div id="html_71143584e08d45149aa1274702aed925" style="width: 100.0%; height: 100.0%;">German_shepherd_dog</div>`)[0];
+                popup_a363eb219c73473a8c0357beab7feb04.setContent(html_71143584e08d45149aa1274702aed925);
+            
+
+            marker_d6d54ca5bcc64b23beba1853bbb0adef.bindPopup(popup_a363eb219c73473a8c0357beab7feb04)
+            ;
+
+            
+        
+    
+        var marker_c7a982a3b214475f9faf26f3a5fc9f5f = L.marker(
+            [32.091119, 34.771643],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_40a9076474784253b3ba6103ef880bb3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_280bc8a0fb264ccba61f91ea010221b3 = $(`<div id="html_280bc8a0fb264ccba61f91ea010221b3" style="width: 100.0%; height: 100.0%;">Indepenence Park</div>`)[0];
+                popup_40a9076474784253b3ba6103ef880bb3.setContent(html_280bc8a0fb264ccba61f91ea010221b3);
+            
+
+            marker_c7a982a3b214475f9faf26f3a5fc9f5f.bindPopup(popup_40a9076474784253b3ba6103ef880bb3)
+            ;
+
+            
+        
+    
+        var marker_13e445b91b904a0d9da8e2f5405f356a = L.marker(
+            [32.049481, 34.771643],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_14c2afea939f45c0a3093e25adb97c0e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_17073dca798642888673ccca4275139a = $(`<div id="html_17073dca798642888673ccca4275139a" style="width: 100.0%; height: 100.0%;">Doberman_pinscher</div>`)[0];
+                popup_14c2afea939f45c0a3093e25adb97c0e.setContent(html_17073dca798642888673ccca4275139a);
+            
+
+            marker_13e445b91b904a0d9da8e2f5405f356a.bindPopup(popup_14c2afea939f45c0a3093e25adb97c0e)
+            ;
+
+            
+        
+    
+        var marker_5c411e163c7d4a4abcc42f807a7331df = L.marker(
+            [32.045915, 34.770934],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_a9c9f3cd320d4f10bd5e76f30cd1ff62 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4f148f5801274b95a77b9463ce0e4311 = $(`<div id="html_4f148f5801274b95a77b9463ce0e4311" style="width: 100.0%; height: 100.0%;">German_shepherd_dog</div>`)[0];
+                popup_a9c9f3cd320d4f10bd5e76f30cd1ff62.setContent(html_4f148f5801274b95a77b9463ce0e4311);
+            
+
+            marker_5c411e163c7d4a4abcc42f807a7331df.bindPopup(popup_a9c9f3cd320d4f10bd5e76f30cd1ff62)
+            ;
+
+            
+        
+    
+        var marker_faff4cbcf4694deaaa1281ff3418dc72 = L.marker(
+            [32.049712, 34.760246],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_74070de21b51411aa70627d451433655 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_232871f236914c6e9cd556e28696da67 = $(`<div id="html_232871f236914c6e9cd556e28696da67" style="width: 100.0%; height: 100.0%;">Doberman_pinscher</div>`)[0];
+                popup_74070de21b51411aa70627d451433655.setContent(html_232871f236914c6e9cd556e28696da67);
+            
+
+            marker_faff4cbcf4694deaaa1281ff3418dc72.bindPopup(popup_74070de21b51411aa70627d451433655)
+            ;
+
+            
+        
+    
+        var marker_9f30425400394ab5a213544f581e1647 = L.marker(
+            [32.048165, 34.755941],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_f5a0b2f239234b898ba49b2dbb3cab50 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_80c2aa51a2a34726b47386c8cbd3b74b = $(`<div id="html_80c2aa51a2a34726b47386c8cbd3b74b" style="width: 100.0%; height: 100.0%;">Doberman_pinscher</div>`)[0];
+                popup_f5a0b2f239234b898ba49b2dbb3cab50.setContent(html_80c2aa51a2a34726b47386c8cbd3b74b);
+            
+
+            marker_9f30425400394ab5a213544f581e1647.bindPopup(popup_f5a0b2f239234b898ba49b2dbb3cab50)
+            ;
+
+            
+        
+    
+        var marker_ed2e85ac5e7b4c6fb7de6db37239c33f = L.marker(
+            [32.046993, 34.752888],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_54cb08fa85974095a4ee78e7ba122581 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e5f240a24f78473f979efae52febeeaf = $(`<div id="html_e5f240a24f78473f979efae52febeeaf" style="width: 100.0%; height: 100.0%;">French_bulldog</div>`)[0];
+                popup_54cb08fa85974095a4ee78e7ba122581.setContent(html_e5f240a24f78473f979efae52febeeaf);
+            
+
+            marker_ed2e85ac5e7b4c6fb7de6db37239c33f.bindPopup(popup_54cb08fa85974095a4ee78e7ba122581)
+            ;
+
+            
+        
+    
+        var marker_e335497761ae4fdfb5c5fee26f669e82 = L.marker(
+            [32.072993, 34.773295],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_508036d567e942f19f987db3173da821 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_83c2753c7dea4238a89edc2665da2502 = $(`<div id="html_83c2753c7dea4238a89edc2665da2502" style="width: 100.0%; height: 100.0%;">Dalmatian</div>`)[0];
+                popup_508036d567e942f19f987db3173da821.setContent(html_83c2753c7dea4238a89edc2665da2502);
+            
+
+            marker_e335497761ae4fdfb5c5fee26f669e82.bindPopup(popup_508036d567e942f19f987db3173da821)
+            ;
+
+            
+        
+    
+        var marker_e3b0186159b943d29a847a349a5dbb7c = L.marker(
+            [32.099299, 34.811296],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_553691181b7a45a08774fa2014dc5226 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4dab532a87ec4ecbba337524e03153ff = $(`<div id="html_4dab532a87ec4ecbba337524e03153ff" style="width: 100.0%; height: 100.0%;">French_bulldog</div>`)[0];
+                popup_553691181b7a45a08774fa2014dc5226.setContent(html_4dab532a87ec4ecbba337524e03153ff);
+            
+
+            marker_e3b0186159b943d29a847a349a5dbb7c.bindPopup(popup_553691181b7a45a08774fa2014dc5226)
+            ;
+
+            
+        
+    
+        var marker_83c211ae6a844a5aacc14d283fc67968 = L.marker(
+            [32.078151, 34.783607],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_00e17f6a6f2f442992e0908822272d38 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_acb319cfb890439caa691541fbfe1c61 = $(`<div id="html_acb319cfb890439caa691541fbfe1c61" style="width: 100.0%; height: 100.0%;">German_shepherd_dog</div>`)[0];
+                popup_00e17f6a6f2f442992e0908822272d38.setContent(html_acb319cfb890439caa691541fbfe1c61);
+            
+
+            marker_83c211ae6a844a5aacc14d283fc67968.bindPopup(popup_00e17f6a6f2f442992e0908822272d38)
+            ;
+
+            
+        
+    
+        var marker_aebd67b589b742b380c6d885781a3129 = L.marker(
+            [32.091119, 34.771643],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_6c2a3fbb609c446f8508c22a4fb75906 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0d3f8fb4058e431e9cdbc15cd078fbe2 = $(`<div id="html_0d3f8fb4058e431e9cdbc15cd078fbe2" style="width: 100.0%; height: 100.0%;">French_bulldog</div>`)[0];
+                popup_6c2a3fbb609c446f8508c22a4fb75906.setContent(html_0d3f8fb4058e431e9cdbc15cd078fbe2);
+            
+
+            marker_aebd67b589b742b380c6d885781a3129.bindPopup(popup_6c2a3fbb609c446f8508c22a4fb75906)
+            ;
+
+            
+        
+    
+        var marker_93e54bbd882e4881ad81bcfca3fbe223 = L.marker(
+            [32.091119, 34.771643],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_d54c10e8f0c14b5eadaee886172aadb4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1cea8911271b4736afa10f2489ffd157 = $(`<div id="html_1cea8911271b4736afa10f2489ffd157" style="width: 100.0%; height: 100.0%;">Chihuahua</div>`)[0];
+                popup_d54c10e8f0c14b5eadaee886172aadb4.setContent(html_1cea8911271b4736afa10f2489ffd157);
+            
+
+            marker_93e54bbd882e4881ad81bcfca3fbe223.bindPopup(popup_d54c10e8f0c14b5eadaee886172aadb4)
+            ;
+
+            
+        
+    
+        var marker_00b39537ccd34e6c9010423cf0781570 = L.marker(
+            [32.04948, 34.771643],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_52b5d1ab521f4142a0581ba9b71cb1c8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2dde9e976466485183628c0407f5bd48 = $(`<div id="html_2dde9e976466485183628c0407f5bd48" style="width: 100.0%; height: 100.0%;">Havanese</div>`)[0];
+                popup_52b5d1ab521f4142a0581ba9b71cb1c8.setContent(html_2dde9e976466485183628c0407f5bd48);
+            
+
+            marker_00b39537ccd34e6c9010423cf0781570.bindPopup(popup_52b5d1ab521f4142a0581ba9b71cb1c8)
+            ;
+
+            
+        
+    
+        var marker_6053219779974cf68a3306f23ba2016e = L.marker(
+            [32.045915, 34.770935],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_f7a8d2766de4478d9f47852cec87a7c8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a2ff245ed15647bea2326e3601944f67 = $(`<div id="html_a2ff245ed15647bea2326e3601944f67" style="width: 100.0%; height: 100.0%;">German_shepherd_dog</div>`)[0];
+                popup_f7a8d2766de4478d9f47852cec87a7c8.setContent(html_a2ff245ed15647bea2326e3601944f67);
+            
+
+            marker_6053219779974cf68a3306f23ba2016e.bindPopup(popup_f7a8d2766de4478d9f47852cec87a7c8)
+            ;
+
+            
+        
+    
+        var marker_979a7216154e456db72403ed5907483f = L.marker(
+            [32.04971, 34.760246],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_35dd226364df4cd8b40687938a10428f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4e6ae349548d41448d5b6e5f1652cdf4 = $(`<div id="html_4e6ae349548d41448d5b6e5f1652cdf4" style="width: 100.0%; height: 100.0%;">Havanese</div>`)[0];
+                popup_35dd226364df4cd8b40687938a10428f.setContent(html_4e6ae349548d41448d5b6e5f1652cdf4);
+            
+
+            marker_979a7216154e456db72403ed5907483f.bindPopup(popup_35dd226364df4cd8b40687938a10428f)
+            ;
+
+            
+        
+    
+        var marker_4db2ab2fe7724c97835514fec31657cd = L.marker(
+            [32.048166, 34.755941],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_324cc230f69c4cc3b699c4886305021b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9b8951eaf0fe4e63858f206964c7c38b = $(`<div id="html_9b8951eaf0fe4e63858f206964c7c38b" style="width: 100.0%; height: 100.0%;">Chihuahua</div>`)[0];
+                popup_324cc230f69c4cc3b699c4886305021b.setContent(html_9b8951eaf0fe4e63858f206964c7c38b);
+            
+
+            marker_4db2ab2fe7724c97835514fec31657cd.bindPopup(popup_324cc230f69c4cc3b699c4886305021b)
+            ;
+
+            
+        
+    
+        var marker_f320482fe2b54d6d8c760f3a652907cc = L.marker(
+            [32.046993, 34.752888],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_f8a4c61948ba4217a09d0f7a94b886e5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0cdfe006c86d4dcb8799084aa4e6d2ae = $(`<div id="html_0cdfe006c86d4dcb8799084aa4e6d2ae" style="width: 100.0%; height: 100.0%;">French_bulldog</div>`)[0];
+                popup_f8a4c61948ba4217a09d0f7a94b886e5.setContent(html_0cdfe006c86d4dcb8799084aa4e6d2ae);
+            
+
+            marker_f320482fe2b54d6d8c760f3a652907cc.bindPopup(popup_f8a4c61948ba4217a09d0f7a94b886e5)
+            ;
+
+            
+        
+    
+        var marker_4685d79d31a74f199fb44ac0bf8a6210 = L.marker(
+            [32.073409, 34.772774],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_0cc5a640e7d5408087b9951974246cf5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_33e68561dbdc4e6fa3b1c157ae71dfce = $(`<div id="html_33e68561dbdc4e6fa3b1c157ae71dfce" style="width: 100.0%; height: 100.0%;">Cavalier_king_charles_spaniel</div>`)[0];
+                popup_0cc5a640e7d5408087b9951974246cf5.setContent(html_33e68561dbdc4e6fa3b1c157ae71dfce);
+            
+
+            marker_4685d79d31a74f199fb44ac0bf8a6210.bindPopup(popup_0cc5a640e7d5408087b9951974246cf5)
+            ;
+
+            
+        
+    
+        var marker_b4b16a0a95804c4fbebaccf4b6e8ab26 = L.marker(
+            [32.07378, 34.77311],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_589f99af341d455ba0b838a2f99a4888 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a3b57bb8bda94a4f82154829df1dfd16 = $(`<div id="html_a3b57bb8bda94a4f82154829df1dfd16" style="width: 100.0%; height: 100.0%;">Chihuahua</div>`)[0];
+                popup_589f99af341d455ba0b838a2f99a4888.setContent(html_a3b57bb8bda94a4f82154829df1dfd16);
+            
+
+            marker_b4b16a0a95804c4fbebaccf4b6e8ab26.bindPopup(popup_589f99af341d455ba0b838a2f99a4888)
+            ;
+
+            
+        
+    
+        var marker_619c68e040604c279b5cd91ea2e48611 = L.marker(
+            [32.073569, 34.77348],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_3f53f960e43e4a5f94cd9bfd1fde6b02 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dee89bca7bbe4eacafbb01bdeb3f7dce = $(`<div id="html_dee89bca7bbe4eacafbb01bdeb3f7dce" style="width: 100.0%; height: 100.0%;">French_bulldog</div>`)[0];
+                popup_3f53f960e43e4a5f94cd9bfd1fde6b02.setContent(html_dee89bca7bbe4eacafbb01bdeb3f7dce);
+            
+
+            marker_619c68e040604c279b5cd91ea2e48611.bindPopup(popup_3f53f960e43e4a5f94cd9bfd1fde6b02)
+            ;
+
+            
+        
+    
+        var marker_072d5b932c6643ca827e9afab0a74a67 = L.marker(
+            [32.073377, 34.773763],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_bb240b69d23b49a588b1a371924d0db3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_244484bf4c0a45c3a3e9c6c78ca907ec = $(`<div id="html_244484bf4c0a45c3a3e9c6c78ca907ec" style="width: 100.0%; height: 100.0%;">German_shepherd_dog</div>`)[0];
+                popup_bb240b69d23b49a588b1a371924d0db3.setContent(html_244484bf4c0a45c3a3e9c6c78ca907ec);
+            
+
+            marker_072d5b932c6643ca827e9afab0a74a67.bindPopup(popup_bb240b69d23b49a588b1a371924d0db3)
+            ;
+
+            
+        
+    
+        var marker_3b6e0de8f6064cb185532bbb49f6ea62 = L.marker(
+            [32.073111, 34.773692],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_d922bddbb4364ad1a2cde84ab709b13c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_42553c1c3d154120a3a054ea8d2adf8b = $(`<div id="html_42553c1c3d154120a3a054ea8d2adf8b" style="width: 100.0%; height: 100.0%;">Doberman_pinscher</div>`)[0];
+                popup_d922bddbb4364ad1a2cde84ab709b13c.setContent(html_42553c1c3d154120a3a054ea8d2adf8b);
+            
+
+            marker_3b6e0de8f6064cb185532bbb49f6ea62.bindPopup(popup_d922bddbb4364ad1a2cde84ab709b13c)
+            ;
+
+            
+        
+    
+        var marker_64ae2d0d20f24fe6beb2c2b0278d8e6c = L.marker(
+            [32.0726, 34.773374],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_087ddb3591da42eca0df64c7fa67eab7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_84e97c4f66904bf4899212e4b2e0ed13 = $(`<div id="html_84e97c4f66904bf4899212e4b2e0ed13" style="width: 100.0%; height: 100.0%;">Dalmatian</div>`)[0];
+                popup_087ddb3591da42eca0df64c7fa67eab7.setContent(html_84e97c4f66904bf4899212e4b2e0ed13);
+            
+
+            marker_64ae2d0d20f24fe6beb2c2b0278d8e6c.bindPopup(popup_087ddb3591da42eca0df64c7fa67eab7)
+            ;
+
+            
+        
+    
+        var marker_5fcd6d2989b94080841558427ea85eb0 = L.marker(
+            [32.045974, 34.770063],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_bb3858b2fddc40aca18fdb51c06c716a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4e623622cfa047f1b0d9cf81ce306b27 = $(`<div id="html_4e623622cfa047f1b0d9cf81ce306b27" style="width: 100.0%; height: 100.0%;">German_pinscher</div>`)[0];
+                popup_bb3858b2fddc40aca18fdb51c06c716a.setContent(html_4e623622cfa047f1b0d9cf81ce306b27);
+            
+
+            marker_5fcd6d2989b94080841558427ea85eb0.bindPopup(popup_bb3858b2fddc40aca18fdb51c06c716a)
+            ;
+
+            
+        
+    
+        var marker_dc84a3b029654fde98fb836d2e59710e = L.marker(
+            [32.04529, 34.770818],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_219a04524f8c4cdd9eaea3b8385ab4d0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8a5f348be5a844c3ad43cdd010af7ab0 = $(`<div id="html_8a5f348be5a844c3ad43cdd010af7ab0" style="width: 100.0%; height: 100.0%;">German_pinscher</div>`)[0];
+                popup_219a04524f8c4cdd9eaea3b8385ab4d0.setContent(html_8a5f348be5a844c3ad43cdd010af7ab0);
+            
+
+            marker_dc84a3b029654fde98fb836d2e59710e.bindPopup(popup_219a04524f8c4cdd9eaea3b8385ab4d0)
+            ;
+
+            
+        
+    
+        var marker_34e06ba6219041c6b5408ef3adb15b20 = L.marker(
+            [32.045914, 34.770935],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_ac663b8d2a60439284f12298d1bafb22 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_45ae98cb1bac4f1a8ef50fccf174e6cf = $(`<div id="html_45ae98cb1bac4f1a8ef50fccf174e6cf" style="width: 100.0%; height: 100.0%;">Belgian_malinois</div>`)[0];
+                popup_ac663b8d2a60439284f12298d1bafb22.setContent(html_45ae98cb1bac4f1a8ef50fccf174e6cf);
+            
+
+            marker_34e06ba6219041c6b5408ef3adb15b20.bindPopup(popup_ac663b8d2a60439284f12298d1bafb22)
+            ;
+
+            
+        
+    
+        var marker_1f374c39862241639f41168daeceef67 = L.marker(
+            [32.0459152, 34.770935],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_248df5f1b70b4576ba677350287d30ac = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_78f00100d15842539963bf8a84c5cbf3 = $(`<div id="html_78f00100d15842539963bf8a84c5cbf3" style="width: 100.0%; height: 100.0%;">German_pinscher</div>`)[0];
+                popup_248df5f1b70b4576ba677350287d30ac.setContent(html_78f00100d15842539963bf8a84c5cbf3);
+            
+
+            marker_1f374c39862241639f41168daeceef67.bindPopup(popup_248df5f1b70b4576ba677350287d30ac)
+            ;
+
+            
+        
+    
+        var marker_5512fc29f989414fb0926df8fc40873d = L.marker(
+            [32.046315, 34.771986],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_2ab38aa5718a434da371ef37f97c7985 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cc3f86cb8d4844c0b99dc13cb219c1b5 = $(`<div id="html_cc3f86cb8d4844c0b99dc13cb219c1b5" style="width: 100.0%; height: 100.0%;">Belgian_malinois</div>`)[0];
+                popup_2ab38aa5718a434da371ef37f97c7985.setContent(html_cc3f86cb8d4844c0b99dc13cb219c1b5);
+            
+
+            marker_5512fc29f989414fb0926df8fc40873d.bindPopup(popup_2ab38aa5718a434da371ef37f97c7985)
+            ;
+
+            
+        
+    
+        var marker_47a7021f0d7040ba812f9a32fa448725 = L.marker(
+            [32.044948, 34.771436],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_7fc2e5cb705c482cb6680a040b2921de = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_894eb7c7667e442bb7dfa688ac9ac6c6 = $(`<div id="html_894eb7c7667e442bb7dfa688ac9ac6c6" style="width: 100.0%; height: 100.0%;">German_shepherd_dog</div>`)[0];
+                popup_7fc2e5cb705c482cb6680a040b2921de.setContent(html_894eb7c7667e442bb7dfa688ac9ac6c6);
+            
+
+            marker_47a7021f0d7040ba812f9a32fa448725.bindPopup(popup_7fc2e5cb705c482cb6680a040b2921de)
+            ;
+
+            
+        
+    
+        var marker_74f0badc271346a3ba7b900c2c6c2ba7 = L.marker(
+            [32.045399, 34.768677],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_6dac391dac2e4ddf850b40ee7d945ef7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_102fd300c906451a9af6b0e01db87bb7 = $(`<div id="html_102fd300c906451a9af6b0e01db87bb7" style="width: 100.0%; height: 100.0%;">German_shepherd_dog</div>`)[0];
+                popup_6dac391dac2e4ddf850b40ee7d945ef7.setContent(html_102fd300c906451a9af6b0e01db87bb7);
+            
+
+            marker_74f0badc271346a3ba7b900c2c6c2ba7.bindPopup(popup_6dac391dac2e4ddf850b40ee7d945ef7)
+            ;
+
+            
+        
+    
+        var marker_9fe2afdfafe64802872fc783b014d6b9 = L.marker(
+            [32.046603, 34.76987],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_e4dd1fac7a174528bc106663a5cc1fcd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b50d59a9d4424a00bcb793b78835bf34 = $(`<div id="html_b50d59a9d4424a00bcb793b78835bf34" style="width: 100.0%; height: 100.0%;">German_shepherd_dog</div>`)[0];
+                popup_e4dd1fac7a174528bc106663a5cc1fcd.setContent(html_b50d59a9d4424a00bcb793b78835bf34);
+            
+
+            marker_9fe2afdfafe64802872fc783b014d6b9.bindPopup(popup_e4dd1fac7a174528bc106663a5cc1fcd)
+            ;
+
+            
+        
+    
+        var marker_7a40338067934846aacaa7cdce7f705c = L.marker(
+            [32.063537, 34.760613],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_e68f810a079b4a22b05c8fd93d88cb0f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c53fb82918184788b847cce5cc6e74b9 = $(`<div id="html_c53fb82918184788b847cce5cc6e74b9" style="width: 100.0%; height: 100.0%;">Doberman_pinscher</div>`)[0];
+                popup_e68f810a079b4a22b05c8fd93d88cb0f.setContent(html_c53fb82918184788b847cce5cc6e74b9);
+            
+
+            marker_7a40338067934846aacaa7cdce7f705c.bindPopup(popup_e68f810a079b4a22b05c8fd93d88cb0f)
+            ;
+
+            
+        
+    
+        var marker_47906bfc13a94000a03d67cb3d9d7a65 = L.marker(
+            [32.064066, 34.761346],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_2ec117043a0c42049e4cf6c089a3e3ba = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ae66dd4acc5041798702c6c843e8a583 = $(`<div id="html_ae66dd4acc5041798702c6c843e8a583" style="width: 100.0%; height: 100.0%;">Chow_chow</div>`)[0];
+                popup_2ec117043a0c42049e4cf6c089a3e3ba.setContent(html_ae66dd4acc5041798702c6c843e8a583);
+            
+
+            marker_47906bfc13a94000a03d67cb3d9d7a65.bindPopup(popup_2ec117043a0c42049e4cf6c089a3e3ba)
+            ;
+
+            
+        
+    
+        var marker_0d41e2684e05479f84246a78ba374022 = L.marker(
+            [32.062124, 34.760363],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_a75253e9164c497ead2d0594ba0d20e0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5c6574ebd41f4bc383b11d8174800536 = $(`<div id="html_5c6574ebd41f4bc383b11d8174800536" style="width: 100.0%; height: 100.0%;">Boxer</div>`)[0];
+                popup_a75253e9164c497ead2d0594ba0d20e0.setContent(html_5c6574ebd41f4bc383b11d8174800536);
+            
+
+            marker_0d41e2684e05479f84246a78ba374022.bindPopup(popup_a75253e9164c497ead2d0594ba0d20e0)
+            ;
+
+            
+        
+    
+        var marker_2960da8a03f44d5b8ca5ec47385701cb = L.marker(
+            [32.065982, 34.761503],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_70747b72c15749788fdb8bcc4ce53093);
+        
+    
+            var popup_eaabf0e3e3a74dd3b6aecfbcd85e34ff = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2f18559a67b14bcb87d94c98de9a5792 = $(`<div id="html_2f18559a67b14bcb87d94c98de9a5792" style="width: 100.0%; height: 100.0%;">Belgian_malinois</div>`)[0];
+                popup_eaabf0e3e3a74dd3b6aecfbcd85e34ff.setContent(html_2f18559a67b14bcb87d94c98de9a5792);
+            
+
+            marker_2960da8a03f44d5b8ca5ec47385701cb.bindPopup(popup_eaabf0e3e3a74dd3b6aecfbcd85e34ff)
+            ;
+
+            
+        
+</script>

@@ -1,4 +1,4 @@
-from bottle import route, run, template, static_file, get, post, delete, request, error, TEMPLATE_PATH
+from bottle import route, run, template, static_file, get, post, request, redirect, TEMPLATE_PATH, error
 
 from sys import argv
 import json
@@ -23,20 +23,22 @@ connection = pymysql.connect(host='db4free.net',
 # FILE UPLOAD ----------------------------------------------------
 # ----------------------------------------------------------------
 
+
 @post('/upload')
 def do_upload():
+    x = "It's a dog"
+    y = "The breed is a Chiwawa"
+    z= "Go to Gan Meir"
     upload = request.files.get('upload')
     name, ext = os.path.splitext(upload.filename)
     if ext not in ('.png', '.jpg', '.jpeg'):
         return "File extension not allowed."
-
     save_path = "images"
     if not os.path.exists(save_path):
         os.makedirs(save_path)
-
     file_path = "{path}/{file}".format(path=save_path, file=upload.filename)
     upload.save(file_path)
-    return "File successfully saved to '{0}'.".format(save_path)
+    return redirect('portfolio-item.html')
 
 
 # ----------------------------------------------------------------
@@ -209,14 +211,14 @@ def list_locations():
 
 @get("/")
 @route("/about.html")
-@get("/map.html")
+@get("/fake_map.html")
 def index():
     return template("about.html")
 
 
-@route("/map.html")
+@route("/fake_map.html")
 def map():
-    return static_file('map.html', root='')
+    return static_file('fake_map.html', root='')
 
 
 @route("/services.html")
