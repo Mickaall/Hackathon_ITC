@@ -101,6 +101,72 @@ def load_alerts():
                            'MSG': "Internal error",
                            'CODE': 500})
 
+
+@get("/alerts-gm")
+def load_alerts_gm():
+    try:
+        with connection.cursor() as cursor:
+            sql = 'SELECT * FROM alerts WHERE location = "Gan Meir"'
+            cursor.execute(sql)
+            result = cursor.fetchall()
+            if result:
+                return json.dumps({'STATUS': 'SUCCESS',
+                                   'ALERTS': result,
+                                   'CODE': 200})
+            else:
+                return json.dumps({'STATUS': 'ERROR',
+                                   'MSG': "no alerts found",
+                                   'CODE': 404})
+
+    except:
+        return json.dumps({'STATUS': 'ERROR',
+                           'MSG': "Internal error",
+                           'CODE': 500})
+
+
+@get("/alerts-gh")
+def load_alerts_gh():
+    try:
+        with connection.cursor() as cursor:
+            sql = 'SELECT * FROM alerts WHERE location = "Gan Hakovshim"'
+            cursor.execute(sql)
+            result = cursor.fetchall()
+            if result:
+                return json.dumps({'STATUS': 'SUCCESS',
+                                   'ALERTS': result,
+                                   'CODE': 200})
+            else:
+                return json.dumps({'STATUS': 'ERROR',
+                                   'MSG': "no alerts found",
+                                   'CODE': 404})
+
+    except:
+        return json.dumps({'STATUS': 'ERROR',
+                           'MSG': "Internal error",
+                           'CODE': 500})
+
+
+@get("/alerts-b")
+def load_alerts_b():
+    try:
+        with connection.cursor() as cursor:
+            sql = 'SELECT * FROM alerts WHERE location = "Beach"'
+            cursor.execute(sql)
+            result = cursor.fetchall()
+            if result:
+                return json.dumps({'STATUS': 'SUCCESS',
+                                   'ALERTS': result,
+                                   'CODE': 200})
+            else:
+                return json.dumps({'STATUS': 'ERROR',
+                                   'MSG': "no alerts found",
+                                   'CODE': 404})
+
+    except:
+        return json.dumps({'STATUS': 'ERROR',
+                           'MSG': "Internal error",
+                           'CODE': 500})
+
 # ----------------------------------------------------------------
 # LIST CATEGORIES & LOCATIONS ------------------------------------
 # ----------------------------------------------------------------

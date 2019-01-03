@@ -94,7 +94,6 @@ About.loadAlerts = function(){
 };
 
 About.renderAlert = function(alert){
-	console.log("ENTER RENDER ALERT")
 	var alertsHolder = $("#alerts-holder");
 	alertTitle = $("<div />").addClass("a-title").text(alert.category);
 	alertText = $("<div />").addClass("a-text").text(alert.description);
