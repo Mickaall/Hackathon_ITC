@@ -108,7 +108,6 @@ def index():
     return template("about.html")
 
 
-
 @route("/map.html")
 def map():
     return static_file('map.html', root='')
