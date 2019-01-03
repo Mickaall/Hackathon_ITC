@@ -50,6 +50,12 @@ About.loadLocations = function(){
 	},"json");
 };
 
+About.renderLocation = function(locName, locId){
+	//Update the locations dropdown in the product form
+	var locationSelect = $("select#choose-loc");
+	var locOp = $("<option />").attr("value",locId).text(locName);
+	locationSelect.append(locOp);
+};
 
 // -----------------------------------------------------------
 // ADD ALERT -------------------------------------------------
@@ -72,11 +78,4 @@ About.bindForms = function(){
 	});
 };
 
-About.renderLocation = function(locName, locId){
-	//Update the locations dropdown in the product form
-	var locationSelect = $("select#choose-loc");
-	var locOp = $("<option />").attr("value",locId).text(locName);
-	locationSelect.append(locOp);
-};
-
-ut.start();
+About.start();

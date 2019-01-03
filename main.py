@@ -47,8 +47,26 @@ def do_upload():
 def add_alert():
 
     category = request.POST.get('category')
+    if category == 1:
+        category = "Cleanliness"
+    elif category == 2:
+        category = "Fight"
+    elif category == 3:
+        category = "Park Condition"
+    elif category == 4:
+        category = "Weather"
+    elif category == 5:
+        category = "Other"
+
     description = request.POST.get('desc')
+
     location = request.POST.get('location')
+    if location == 1:
+        location = "Gan Meir"
+    elif location == 2:
+        location = "Gan Hakovshim"
+    elif location == 3:
+        location = "Beach"
 
     try:
         with connection.cursor() as cursor:
@@ -61,7 +79,7 @@ def add_alert():
                            "MSG": "Missing Parameters",
                            "CODE": 400})
 
-@get("/blog-home-1.html")
+@get("/alerts")
 def load_alerts():
     try:
         with connection.cursor() as cursor:
@@ -69,12 +87,19 @@ def load_alerts():
             cursor.execute(sql)
             result = cursor.fetchall()
             if result:
-                return json.dumps({'STATUS': 'SUCCESS', 'PRODUCTS': result, 'CODE': 201})
+                return json.dumps({'STATUS': 'SUCCESS',
+                                   'ALERTS': result,
+                                   'CODE': 201})
             else:
-                return json.dumps({'STATUS': 'ERROR', 'MSG': "product not found", 'CODE': 404})
+                return json.dumps({'STATUS': 'ERROR',
+                                   'MSG': "product not found",
+                                   'CODE': 404})
 
     except:
-        return json.dumps({'STATUS': 'ERROR', 'MSG': "Internal error", 'CODE': 500})
+        return json.dumps({'STATUS': 'ERROR',
+                           'MSG': "Internal error",
+                           'CODE': 500})
+
 # ----------------------------------------------------------------
 # LIST CATEGORIES & LOCATIONS ------------------------------------
 # ----------------------------------------------------------------
@@ -126,6 +151,7 @@ def index():
 def map():
     return static_file('map.html', root='')
 
+
 @route("/services.html")
 def services():
     return static_file('services.html', root='')
@@ -140,9 +166,12 @@ def blog1():
 def blog2():
     return static_file("blog-home-2.html", root='')
 
+
 @route("/blog-post.html")
 def blog_post():
     return static_file("blog-post.html", root='')
+
+
 @route("/game.html")
 def game():
     return static_file("game.html", root='')
