@@ -75,7 +75,7 @@ height: 200px;
   background-size:cover;
 }
 .card.h-100{
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .play{
@@ -84,4 +84,19 @@ height: 200px;
 .king{
   width: 220px;
   height: 220px;
+}
+.star{
+  width: 30px;
+  height: 30px;
+}
+.a-text{
+font-size:16px;
+}
+.a-loc{
+  font-style: italic;
+  font-weight: bold;
+  font-size:12px;
+}
+.a-title{
+ margin: 15px;
 }
